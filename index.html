@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リスニング音声プレイヤー</title>
+    <style>
+        /* 全体のリセットと背景 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 40px 16px;
+        }
+
+        /* メインコンテナ */
+        .container {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: #2c3e50;
+        }
+
+        /* 音声カードごとのデザイン */
+        .audio-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .audio-card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #4a5568;
+        }
+
+        /* プレイヤーの幅をカード一杯に広げる */
+        audio {
+            width: 100%;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>リスニング教材</h1>
+
+        <!-- Lesson 6 -->
+        <div class="audio-card">
+            <h2>Lesson 6</h2>
+            <audio controls preload="metadata">
+                <source src="audio/lesson6.mp3" type="audio/mpeg">
+                お使いのブラウザは音声再生に対応していません。
+            </audio>
+        </div>
+
+        <!-- Lesson 7 -->
+        <div class="audio-card">
+            <h2>Lesson 7</h2>
+            <audio controls preload="metadata">
+                <source src="audio/lesson7.mp3" type="audio/mpeg">
+                お使いのブラウザは音声再生に対応していません。
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
